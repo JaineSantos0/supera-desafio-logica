@@ -1,8 +1,6 @@
 import java.util.Comparator;
 import java.util.List;
-
 public class OrdenarValoresService {
-
     public List<Integer> ordenar (List<Integer> numeros) {
 
         Comparator<Integer> comp = (s1, s2) -> {
@@ -19,11 +17,10 @@ public class OrdenarValoresService {
 
         return numeros.stream().sorted(comp).toList();
     }
-
     public void organizar(List<Integer> numeros) {
         List<Integer> numerosOrdenados = ordenar(numeros);
         for (Integer numero: numerosOrdenados) {
-            System.out.print(numero + "\n");
+            System.out.println(numero);
         }
     }
 }
